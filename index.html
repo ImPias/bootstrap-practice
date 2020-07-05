@@ -4,8 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Booting</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <style>
+        h1{
+            margin-top: 50px;
+        }
+        #flex-container{
+            height: 200px;
+            background-color: lightcoral;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
     <h1>Hello From Bootstrap</h1>
+
+    <h1>Buttons</h1>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-dark">Dark</button>
+    <button class="btn btn-link">Link</button>
+
+    <h1>Colors</h1>
+    <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores non nulla iure quod animi explicabo quibusdam aliquid harum magnam!</p>
+    <p class="text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eius rem voluptas facilis optio cum repellendus sequi ipsum cumque quae?</p>
+    <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quas, exercitationem consectetur quis tenetur quibusdam blanditiis voluptatum perspiciatis officia praesentium?</p>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vero rem. Eligendi optio eum ratione sequi quis nobis ipsum.</p>
+
+    <h1>Backgrounds</h1>
+    <div class="bg-primary">
+        <h1>Heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem, unde dignissimos sapiente ipsa cupiditate.</p>
+    </div>
+    <div class="bg-info">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ipsum, excepturi modi vero atque quibusdam!</p>
+    </div>
+    <div class="bg-success">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores possimus est non natus corporis?</p>
+    </div>
+
+    <h1>Images</h1>
+    <img class="img-fluid w-25 rounded-circle" src="images/1.jpg" alt="">
+    <img class="img-fluid w-25 img-thumbnail" src="images/2.jpg" alt="">
+    <img class="img-fluid w-25 rounded-circle" src="images/3.jpg" alt="">
+
+    <h1>Card</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="images/2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Eathical Hacker</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+
+    <h1>Card Deck</h1>
+    <div class="card-deck w-100">
+        <div class="card">
+          <img src="images/1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+    </div>
+
+    <h1>Grid</h1>
+    <div class="container">
+        <div class="row text-justify">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, vero, quas quaerat quis reiciendis accusamus, sit odio minus ullam porro asperiores nisi officia quo voluptatibus nulla molestias aspernatur! Corrupti at, nostrum natus vitae, maxime animi, eligendi aperiam sed explicabo esse veniam nihil tempora ipsam labore a repellat adipisci veritatis? A numquam dolorum consectetur tempore error libero sint est adipisci mollitia?</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <img src="images/1.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, vero, quas quaerat quis reiciendis accusamus, sit odio minus ullam porro asperiores nisi officia quo voluptatibus nulla molestias aspernatur! Corrupti at, nostrum natus vitae, maxime animi, eligendi aperiam sed explicabo esse veniam nihil tempora ipsam labore a repellat adipisci veritatis? A numquam dolorum consectetur tempore error libero sint est adipisci mollitia?</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <img src="images/2.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, vero, quas quaerat quis reiciendis accusamus, sit odio minus ullam porro asperiores nisi officia quo voluptatibus nulla molestias aspernatur! Corrupti at, nostrum natus vitae, maxime animi, eligendi aperiam sed explicabo esse veniam nihil tempora ipsam labore a repellat adipisci veritatis? A numquam dolorum consectetur tempore error libero sint est adipisci mollitia?</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <img src="images/3.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, vero, quas quaerat quis reiciendis accusamus, sit odio minus ullam porro asperiores nisi officia quo voluptatibus nulla molestias aspernatur! Corrupti at, nostrum natus vitae, maxime animi, eligendi aperiam sed explicabo esse veniam nihil tempora ipsam labore a repellat adipisci veritatis? A numquam dolorum consectetur tempore error libero sint est adipisci mollitia?</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>Carousel</h1>
+    <div class="contianer">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+              <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+
+    <h1>Flex Layout</h1>
+    <div class="container">
+        <div id="flex-container" class="d-flex justify-content-center align-items-center">
+            <div>Shabana</div>
+            <div>Shanbnoor</div>
+            <div>Shuchorita</div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
